@@ -10,6 +10,8 @@ The example is exposing this hierarchy:
 To run the example you must provide a suitable database connection to HR schema.
 To do this in Applications window open Application Resources - Connections - Database - hr@test and set needed connection values.
 
+You may also want to remove custom timezone configuration needed in my environment. To do so right click on ViewController project - Project Properties and in Run/Debug section select Default run configuration. Click OK and restart application server.
+
 When the example is running in your browser:
 
 1. In the tree select Texas - IT - Valli Pataballa.
