@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AppModule"
+  Version="12.1.3.10.8"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true">
+  <ViewUsage
+    Name="LocationsView1"
+    ViewObjectName="ru.cyclone.tabtotree.model.view.LocationsView"/>
+  <ViewUsage
+    Name="DepartmentsView1"
+    ViewObjectName="ru.cyclone.tabtotree.model.view.DepartmentsView"/>
+  <ViewUsage
+    Name="EmployeesView1"
+    ViewObjectName="ru.cyclone.tabtotree.model.view.EmployeesView"/>
+  <ViewLinkUsage
+    Name="EmpDeptFkLink1"
+    ViewLinkObjectName="ru.cyclone.tabtotree.model.view.link.EmpDeptFkLink"
+    SrcViewUsageName="ru.cyclone.tabtotree.model.AppModule.DepartmentsView1"
+    DstViewUsageName="ru.cyclone.tabtotree.model.AppModule.EmployeesView1"
+    Reversed="false"/>
+</AppModule>
